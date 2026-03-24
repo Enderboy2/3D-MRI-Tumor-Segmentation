@@ -6,10 +6,11 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 <!-- Replace the path below with your actual screenshot after running the notebook -->
+## Actual 3d of tumour vs predicted 3d of tumour
 ![Prediction Example 3D](assets/3D.png)
-*actual 3d of tumour vs predicted 3d of tumour*
+## MIP of prediction
 ![Prediction Example MIP](assets/MIP.png)
-*MIP of prediction*
+
 ---
 
 ## What this is
