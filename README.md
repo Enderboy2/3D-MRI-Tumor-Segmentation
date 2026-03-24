@@ -6,16 +6,17 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 <!-- Replace the path below with your actual screenshot after running the notebook -->
-![Prediction Example](assets/prediction_example.png)
-*Left to right: Raw MRI, Ground truth mask, Model prediction, and a visual overlay.*
-
+![Prediction Example 3D](assets/3D.png)
+*actual 3d of tumour vs predicted 3d of tumour*
+![Prediction Example MIP](assets/MIP.png)
+*MIP of prediction*
 ---
 
 ## What this is
 
-I built a 3D U-Net to find brain tumors in MRI scans. 
+built a 3D U-Net to find brain tumors in MRI scans. 
 
-Most simple projects slice the brain into 2D images and process them one by one. But tumors are 3D objects, so I built this to process the entire 3D volume at once. It takes a full brain scan combined from four different MRI types and maps out exactly where the tumor is. It even breaks the tumor down into three specific parts: the necrotic core, the edema, and the enhancing tumor.
+Most simple projects slice the brain into 2D images and process them one by one. But tumors are 3D objects, so I built this to process the entire 3D volume at once. It takes a full brain scan combined from four different MRI types and maps out exactly where the tumor is. It even tries to break the tumor down into three specific parts: the necrotic core, the edema, and the enhancing tumor.
 
 ## The Data
 
@@ -57,7 +58,7 @@ If you want to run this yourself, Kaggle is the easiest way.
 4. Go to Settings and turn on the **GPU** and **Internet**.
 5. Run all the cells. 
 
-Training 100 patients for 200 epochs will take a few hours.
+Training 100 patients for 200 epochs will take an hour or less.
 
 ## Project Files
 
@@ -65,7 +66,7 @@ Training 100 patients for 200 epochs will take a few hours.
 3D_segmentation/
 ├── brain_tumor_segmentation.ipynb   # The main code
 ├── assets/
-│   └── prediction_example.png       # Toss your result screenshot here
+│   └── Result Graphs     
 ├── requirements.txt                 
 ├── LICENSE                          
 ├── .gitignore
